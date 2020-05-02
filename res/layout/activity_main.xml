@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/beijing"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    
+    <ImageView
+        android:id="@+id/tiwenyuan"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:src="@drawable/tiwenyuan" />
+
+    <TextView
+        android:id="@+id/tiwen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sheshidu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="体温"
+        android:textColor="#7f7f0b"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/wendu_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tiwen"
+        android:layout_alignTop="@+id/tiwenyuan"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="58dp"
+        android:text="36.5"
+        android:textColor="#7f7f0b"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/sheshidu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wendu_data"
+        android:layout_alignBottom="@+id/wendu_data"
+        android:layout_alignLeft="@+id/tiwen"
+        android:layout_marginLeft="32dp"
+        android:text="  ℃"
+        android:textColor="#7f7f0b"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/lishitiwen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tiwenyuan"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/btn_lishiwendu"
+        android:scaleType="centerInside"
+        android:src="@drawable/lishitiwen" />
+   
+    <TextView
+        android:id="@+id/dibu_icon_left"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+          />
+    
+    <ImageView
+        android:id="@+id/dibu_icon_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/dibu_icon_left"
+        android:layout_toLeftOf="@+id/dibu_icon_right"
+        android:background="#ffffff"
+        android:src="@drawable/dibutubiao_shouye" />
+    
+     <TextView
+        android:id="@+id/dibu_icon_right"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+          />
+
+    <Button
+        android:id="@+id/btn_zhuye"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tiwenyuan"
+        android:background="@drawable/btn_dibu"
+         />
+
+    <Button
+        android:id="@+id/button_faxian"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_dibu" />
+
+    <Button
+        android:id="@+id/my"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_dibu" />
+    
+</RelativeLayout>
+ 
