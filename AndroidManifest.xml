@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/test" >
         <activity
-            android:name="com.example.tempdetectionapp.Login"
+            android:name="com.example.tempdetectionapp.My"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +29,10 @@
        <activity
             android:name="com.example.test.Login"
             android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.test.My"
+            android:label="@string/title_activity_my" >
         </activity>
         
 -->

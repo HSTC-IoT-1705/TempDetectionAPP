@@ -1,0 +1,160 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    tools:context=".My" >
+
+    <ImageView
+        android:id="@+id/account_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/account"
+        android:background="#ffffff"  />
+    <Button 
+        android:id="@+id/btn_account"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/account_icon"
+        android:layout_alignTop="@+id/account_icon"
+        android:background="#ffffff"
+        android:text="    账户信息" 
+        android:gravity="center|left"
+        android:textSize="18sp" 
+          />
+
+    <ImageView
+        android:id="@+id/baojing_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/account_icon"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/baojing"
+        android:background="#ffffff"  />
+    
+    <Button 
+        android:id="@+id/btn_baojing"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/baojing_icon"
+        android:layout_alignTop="@+id/baojing_icon"
+        android:background="#ffffff"
+        android:text="    报警设置" 
+        android:gravity="center|left"
+        android:textSize="18sp" 
+          />
+
+    <ImageView
+        android:id="@+id/help_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/baojing_icon"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/help"
+        android:background="#ffffff" />
+
+    <Button 
+        android:id="@+id/btn_help"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/help_icon"
+        android:layout_alignTop="@+id/help_icon"
+        android:background="#ffffff"
+        android:text="    使用帮助" 
+        android:gravity="center|left"
+        android:textSize="18sp" 
+          />
+    
+    <ImageView
+        android:id="@+id/about_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/help_icon"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/about" 
+        android:background="#ffffff" />
+    
+    <Button 
+        android:id="@+id/btn_about"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/about_icon"
+        android:layout_alignTop="@+id/about_icon"
+        android:background="#ffffff"
+        android:text="    关于我们" 
+        android:gravity="center|left"
+        android:textSize="18sp" 
+          />
+  
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_about"
+        android:layout_marginTop="140dp"
+        android:text="退出登录" 
+        android:textColor="#ffffff" 
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        />
+    
+    <TextView
+        android:id="@+id/dibu_icon_left"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+          />
+     <ImageView
+        android:id="@+id/dibu_icon_myself"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/dibu_icon_left"
+        android:layout_toLeftOf="@+id/dibu_icon_right"
+        android:background="#ffffff"
+        android:src="@drawable/dibutubiao_my" />
+     
+     <TextView
+        android:id="@+id/dibu_icon_right"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+          />
+     
+     <Button
+        android:id="@+id/btn_zhuye"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_dibu" />
+
+    <Button
+        android:id="@+id/button_faxian"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"   
+        android:background="@drawable/btn_dibu" />
+
+    <Button
+        android:id="@+id/my"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_dibu" />
+
+   
+    
+</RelativeLayout >
