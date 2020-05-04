@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context=".Login" 
+     >
+
+  
+     <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/password_icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/phone" />
+     
+     <ImageView
+        android:id="@+id/password_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/phone_icon"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/password"
+        android:src="@drawable/password" />
+    
+     
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignTop="@+id/phone_icon"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="请输入手机号"
+        android:inputType="number"
+        android:textSize="16sp" />
+       
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/phone_number"
+        android:layout_alignTop="@+id/password_icon"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textSize="16sp" />
+
+    
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:text="登录" 
+        android:textColor="#ffffff" 
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="16dp"
+        android:text="忘记密码? "
+        android:background="#EBEBEB"/>
+
+
+   
+
+</RelativeLayout>
