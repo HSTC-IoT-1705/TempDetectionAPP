@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context=".Alarm" >
+
+    <ImageView
+        android:id="@+id/alarm_inform_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/alarm_inform"
+        android:background="#ffffff"  />
+    <TextView
+        android:id="@+id/text_alarm_inform"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/alarm_inform_icon"
+        android:layout_alignTop="@+id/alarm_inform_icon"
+        android:background="#ffffff"
+        android:text="    接受高温报警通知" 
+        android:textColor="#000000" 
+        android:gravity="center|left"
+        android:textSize="18sp" 
+          />
+
+    <ImageView
+        android:id="@+id/alarm_temp_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alarm_inform_icon"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/alarm_temp"
+        android:background="#ffffff"  />
+    
+    <TextView
+        android:id="@+id/text_alarm_temp"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/alarm_temp_icon"
+        android:layout_alignTop="@+id/alarm_temp_icon"
+        android:background="#ffffff"
+        android:text="    高温报警温度(>=)" 
+        android:textColor="#000000" 
+        android:gravity="center|left"
+        android:textSize="18sp" 
+          />
+
+    <ImageView
+        android:id="@+id/alarm_music_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alarm_temp_icon"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/alarm_music"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/text_alarm_music"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/alarm_music_icon"
+        android:layout_alignTop="@+id/alarm_music_icon"
+        android:background="#ffffff"
+        android:text="    报警铃声" 
+        android:textColor="#000000" 
+        android:gravity="center|left"
+        android:textSize="18sp" 
+          />
+
+   <Switch
+       android:id="@+id/switch_alarm"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/text_alarm_inform"
+       android:layout_alignBottom="@+id/text_alarm_inform"
+       android:layout_alignParentRight="true"
+       android:switchMinWidth="20dp"
+       android:textOff=""
+       android:textOn=""
+       android:thumb="@drawable/thumb"
+       android:track="@drawable/track" />
+
+   <Button
+       android:id="@+id/c_temp"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:layout_alignBottom="@+id/alarm_temp_icon"
+       android:layout_alignParentRight="true"
+       android:text="37.5度 >" 
+       android:background="#ffffff"/>
+
+   <Button
+       android:id="@+id/c_music"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:layout_alignParentRight="true"
+       android:layout_alignBottom="@+id/alarm_music_icon"
+       android:text="argon >" 
+       android:background="#ffffff"/>
+    
+</RelativeLayout>

@@ -63,15 +63,14 @@
         android:background="@drawable/btn_lishiwendu"
         android:scaleType="centerInside"
         android:src="@drawable/lishitiwen" />
-   
+
     <TextView
         android:id="@+id/dibu_icon_left"
         android:layout_width="20dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="#ffffff"
-          />
-    
+        android:background="#ffffff" />
+        
     <ImageView
         android:id="@+id/dibu_icon_home"
         android:layout_width="match_parent"
@@ -81,8 +80,8 @@
         android:layout_toLeftOf="@+id/dibu_icon_right"
         android:background="#ffffff"
         android:src="@drawable/dibutubiao_shouye" />
-    
-     <TextView
+
+    <TextView
         android:id="@+id/dibu_icon_right"
         android:layout_width="20dp"
         android:layout_height="50dp"
@@ -90,30 +89,30 @@
         android:layout_alignParentRight="true"
         android:background="#ffffff"
           />
-
+    
     <Button
         android:id="@+id/btn_zhuye"
         android:layout_width="80dp"
         android:layout_height="42dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/tiwenyuan"
+        android:layout_alignParentLeft="true" 
         android:background="@drawable/btn_dibu"
          />
 
     <Button
-        android:id="@+id/button_faxian"
-        android:layout_width="80dp"
-        android:layout_height="42dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/btn_dibu" />
-
-    <Button
-        android:id="@+id/my"
+        android:id="@+id/btn_faxian"
         android:layout_width="80dp"
         android:layout_height="42dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_dibu" />
+
+    <Button
+        android:id="@+id/btn_my"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" 
         android:background="@drawable/btn_dibu" />
     
 </RelativeLayout>

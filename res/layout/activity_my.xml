@@ -140,7 +140,7 @@
         android:background="@drawable/btn_dibu" />
 
     <Button
-        android:id="@+id/button_faxian"
+        android:id="@+id/btn_faxian"
         android:layout_width="80dp"
         android:layout_height="42dp"
         android:layout_alignParentBottom="true"
@@ -148,7 +148,7 @@
         android:background="@drawable/btn_dibu" />
 
     <Button
-        android:id="@+id/my"
+        android:id="@+id/btn_my"
         android:layout_width="80dp"
         android:layout_height="42dp"
         android:layout_alignParentBottom="true"

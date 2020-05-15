@@ -9,27 +9,31 @@ import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class Login extends Activity {
+public class Alarm extends Activity {
 
-	private Button btnlogin;
+ 
+	private ImageButton btnback;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-		setContentView(R.layout.activity_login);
-		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,R.layout.title_login);		
+		setContentView(R.layout.activity_alarm);
+		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,R.layout.title_alarm);
 		
-		btnlogin = (Button)findViewById(R.id.login);		 
-		btnlogin.setOnClickListener(new OnClickListener() {		
+		btnback = (ImageButton)findViewById(R.id.back);		 
+		btnback.setOnClickListener(new OnClickListener() {		
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent=new Intent(Login.this,MainActivity.class);
+				Intent intent=new Intent(Alarm.this,My.class);
 				startActivity(intent);
 			}			
 	});
+	}
 
- }
+	 
+
 }
